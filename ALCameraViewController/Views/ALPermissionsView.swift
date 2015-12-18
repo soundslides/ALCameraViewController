@@ -8,7 +8,7 @@
 
 import UIKit
 
-internal class ALPermissionsView: UIView {
+class ALPermissionsView: UIView {
    
     let iconView = UIImageView()
     let titleLabel = UILabel()
