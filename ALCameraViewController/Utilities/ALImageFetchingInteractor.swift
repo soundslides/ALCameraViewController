@@ -26,6 +26,9 @@ public class ALImageFetchingInteractor {
     private var authRequested = false
     private let errorDomain = "com.zero.imageFetcher"
   
+    // This shouldn't be necessary but it is if we use class with CocoaPods
+    init() { }
+  
     public func onSuccess(success: ALImageFetchingInteractorSuccess) -> Self {
         self.success = success
         return self
