@@ -20,12 +20,12 @@ extension PHFetchResult: SequenceType {
 
 public class ALImageFetchingInteractor {
 
-    private var success: ALImageFetchingInteractorSuccess?
-    private var failure: ALImageFetchingInteractorFailure?
+    private var success: ALImageFetchingInteractorSuccess? = nil
+    private var failure: ALImageFetchingInteractorFailure? = nil
     
     private var authRequested = false
     private let errorDomain = "com.zero.imageFetcher"
-    
+  
     public func onSuccess(success: ALImageFetchingInteractorSuccess) -> Self {
         self.success = success
         return self
