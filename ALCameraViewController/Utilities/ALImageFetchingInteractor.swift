@@ -27,7 +27,7 @@ public class ALImageFetchingInteractor {
     private let errorDomain = "com.zero.imageFetcher"
   
     // This shouldn't be necessary but it is if we use class with CocoaPods
-    init() { }
+    public init() { }
   
     public func onSuccess(success: ALImageFetchingInteractorSuccess) -> Self {
         self.success = success

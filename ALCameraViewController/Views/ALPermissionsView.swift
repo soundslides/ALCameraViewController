@@ -8,23 +8,23 @@
 
 import UIKit
 
-class ALPermissionsView: UIView {
+public class ALPermissionsView: UIView {
    
     let iconView = UIImageView()
-    let titleLabel = UILabel()
-    let descriptionLabel = UILabel()
+    public let titleLabel = UILabel()
+    public let descriptionLabel = UILabel()
     let settingsButton = UIButton()
     
     let horizontalPadding: CGFloat = 50
     let verticalPadding: CGFloat = 20
     let verticalSpacing: CGFloat = 10
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()
     }
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
     }
@@ -68,7 +68,7 @@ class ALPermissionsView: UIView {
         }
     }
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         
         let size = frame.size

@@ -18,6 +18,10 @@ internal func SpringAnimation(animations: () -> Void) {
         }, completion: nil)
 }
 
+public func ALCameraLocalizedString(key: String) -> String {
+  return LocalizedString(key)
+}
+
 internal func LocalizedString(key: String) -> String {
     return NSLocalizedString(key, tableName: "ALCameraView", bundle: NSBundle(forClass: ALCameraViewController.self), comment: key)
 }
